@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CV - Andrianjanahary Dinah</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background: radial-gradient(circle at top, #0f172a, #020617);
+    color: #e2e8f0;
+}
+
+/* CONTAINER */
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 25px;
+}
+
+/* HEADER */
+.header {
+    background: linear-gradient(135deg, #1e293b, #0b1220);
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+    border: 1px solid rgba(255,255,255,0.05);
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+
+.header p {
+    margin: 6px 0;
+    color: #94a3b8;
+}
+
+/* LINKS */
+a {
+    color: #38bdf8;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* SECTION */
+.section {
+    margin-top: 22px;
+    background: rgba(30, 41, 59, 0.7);
+    backdrop-filter: blur(10px);
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+    border: 1px solid rgba(255,255,255,0.05);
+}
+
+.section h2 {
+    font-size: 18px;
+    border-left: 4px solid #38bdf8;
+    padding-left: 10px;
+    margin-bottom: 15px;
+}
+
+/* LIST */
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 6px;
+    color: #cbd5e1;
+}
+
+/* BUTTON */
+.btn {
+    margin-top: 15px;
+    padding: 12px 18px;
+    background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+    color: black;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+    box-shadow: 0 10px 20px rgba(56,189,248,0.3);
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+/* GALLERY */
+.gallery {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 12px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 14px;
+    transition: 0.3s;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* HIDDEN */
+.hidden {
+    display: none;
+}
+
+/* FOOT EFFECT */
+.footer-glow {
+    position: fixed;
+    bottom: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 400px;
+    height: 400px;
+    background: #38bdf8;
+    filter: blur(150px);
+    opacity: 0.2;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="footer-glow"></div>
+
+<div class="container">
+
+<!-- HEADER -->
+<div class="header">
+    <h1>ANDRIANJANAHARY FANKALAZANA DINAH</h1>
+    <p>MD11 Ambanimaso 2 / Antananarivo, Madagascar</p>
+
+    <p>
+        📞 <a href="tel:+261330608880">+261 33 06 08 880</a> |
+        <a href="tel:+261343306189">+261 34 33 061 89</a>
+    </p>
+
+    <p>
+        📧 <a href="mailto:lazadiah@gmail.com">lazadiah@gmail.com</a>
+    </p>
+</div>
+
+<!-- COMPETENCES -->
+<div class="section">
+<h2>Compétences</h2>
+<ul>
+<li>Langues : Malagasy, Français, Anglais (intermédiaire)</li>
+<li>Word, Excel, PowerPoint</li>
+<li>Programmation autodidacte : HTML, CSS, Python, JavaScript</li>
+
+<li>Manutention et travail sur chantier</li>
+<li>Construction et rénovation</li>
+<li>Utilisation d’outils manuels et électriques</li>
+<li>Chargement et transport de matériaux</li>
+<li>Nettoyage et organisation des chantiers</li>
+<li>Respect des consignes de sécurité</li>
+<li>Travail en équipe</li>
+
+<li>Élevage : nettoyage des enclos, travail extérieur, traite des vaches</li>
+</ul>
+</div>
+
+<!-- EXPERIENCE + BUTTON -->
+<div class="section">
+<h2>Expériences de travail</h2>
+
+<p><b>2024 – Présent :</b> Manœuvre / aide en construction et rénovation (apprentissage sur terrain)</p>
+<p>Entreprise familiale, Ambatolampy, Madagascar</p>
+
+<br>
+
+<p><b>2020 – 2023 :</b> Ouvrier agricole</p>
+<p>Entreprise familiale, Ambatolampy, Madagascar</p>
+
+<!-- BUTTON -->
+<button class="btn" onclick="toggleGallery()">
+Voir mes réalisations
+</button>
+
+<!-- GALLERY -->
+<div id="gallery" class="gallery hidden">
+
+<img src="img1.jpg">
+<img src="img2.jpg">
+<img src="img3.jpg">
+<img src="img4.jpg">
+<img src="img5.jpg">
+<img src="img6.jpg">
+
+<!-- TEXTE SOUS LES PHOTOS -->
+<div style="margin-top:15px; color:#cbd5e1; line-height:1.6; font-size:14px; grid-column: 1 / -1;">
+
+Ces photos montrent les réalisations de notre entreprise dans la modification et l’amélioration des intérieurs de véhicules de transport à Madagascar (plafonds de fourgons Crafter et Sprinter).<br><br>
+
+L’objectif est de rendre les véhicules plus confortables pour les passagers.<br><br>
+
+Cette expérience de 2 ans au sein de l’entreprise m’a permis d’acquérir de solides compétences pratiques en rénovation et en aménagement intérieur.<br><br>
+
+Je suis capable de réaliser ce type de travail de manière autonome, ainsi que des projets de personnalisation de véhicules de loisirs ou de camions (aménagement intérieur et finition).
+
+</div>
+
+</div>
+
+</div>
+
+<!-- FORMATION -->
+<div class="section">
+<h2>Formation</h2>
+
+<p><b>2022 – 2023 :</b> Baccalauréat – Lycée public Ambatolampy</p>
+<p><b>2023 – 2024 :</b> Niveau 3 en anglais – CNELA</p>
+<p><b>Autodidacte :</b> Programmation informatique (HTML, CSS, Python, JavaScript)</p>
+
+</div>
+
+</div>
+
+<script>
+function toggleGallery() {
+    const gallery = document.getElementById("gallery");
+    gallery.classList.toggle("hidden");
+}
+</script>
+
+</body>
+</html>
